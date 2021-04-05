@@ -9,6 +9,7 @@
     --dark-gray-color: #9F9F9F;
     --dark-black-color: #222224;
     --dark-white-color: #FBFBFB;
+    --white-pink-color: #F8F3F4;
 }
 
 body {
@@ -150,6 +151,10 @@ body {
     line-height: 29px;
     text-transform: uppercase;
 }
+.products{
+    display: flex;
+    flex-direction: column;
+}
 
 .product__button {
     display: none;
@@ -160,7 +165,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: center;
+    align-self: center;
 }
 
 .products__text {
@@ -168,7 +173,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    text-align: center;
+    align-self: center;
     margin: 6px 0 48px 0;
 }
 
@@ -215,12 +220,20 @@ body {
 }
 
 .products__button {
-    display: none;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #F26376;
+    background-color: white;
+    padding: 15px 39px;
+    align-self: center;
+    margin-top: 49px;
 }
 
 .advantages {
     background-color: var(--black-color);
-    margin-top: 191px;
+    margin-top: 95px;
 }
 
 .advantages__list {
@@ -296,6 +309,10 @@ body {
     line-height: 38px;
     text-transform: uppercase;
     color: var(--dark-black-color);
+    padding-bottom: 32px;
+}
+.footer__form{
+    display: block;
 }
 
 .footer__sub-title {
@@ -319,3 +336,37 @@ body {
 .footer__twiter {
     padding-left: 7px;
 }
+textarea{
+    resize: none;
+    width: 150px;
+    height: 100px;
+}
+.main__headline{
+    background-color: var(--white-pink-color);
+}
+.main__title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--dark-pink-color);
+    text-transform: uppercase;
+    padding: 59px 0 60px;
+}
+.main__content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+.main__content-form{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: var(--light-black-color);
+}
+.main__text{
+    padding: 22px 0 21px;
+}
+.main__title-form{
+    text-transform: uppercase;
+}
+
